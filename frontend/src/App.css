@@ -1,0 +1,231 @@
+/* Light Mode (Default) */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .list-title,
+.light-mode .student-card {
+  color: #000; /* Ensure text is visible in light mode */
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Apply dark mode to form */
+.dark-mode .form-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.dark-mode input,
+.dark-mode select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode input::placeholder {
+  color: #bbb;
+}
+
+.dark-mode .submit-btn {
+  background-color: #000000;
+}
+
+.dark-mode .submit-btn:hover {
+  background-color: #222222;
+}
+
+/* Center content */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+/* Center the title */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Center the form */
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Input fields */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000; /* Ensure label visibility in light mode */
+}
+
+.dark-mode .input-group label {
+  color: #fff; /* White text in dark mode */
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #000000, #333333);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, #218838, #28a745);
+}
+
+/* Message */
+.message {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; /* Default for light mode */
+}
+
+/* Dark Mode Message */
+.dark-mode .message {
+  color: #fff; /* White text in dark mode */
+}
+
+/* Student List */
+.student-list {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #000;
+}
+
+/* Title */
+.list-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black; /* Default for light mode */
+}
+
+/* Dark Mode Title */
+.dark-mode .list-title {
+  color: white;
+}
+
+/* No Students Message */
+.no-students {
+  font-size: 16px;
+  color: #bbb;
+}
+
+/* Student Cards */
+.student-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(158, 104, 104, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease-in-out;
+  color: #000; /* Ensure visibility in light mode */
+}
+
+.dark-mode .student-card {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  padding: 8px 12px;
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(45deg, #bd2130, #a71d2a);
+}
+
+/* Toggle Button */
+.toggle-btn {
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #444, #222);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.toggle-btn:hover {
+  background: linear-gradient(45deg, #666, #333);
+  transform: scale(1.05);
+}
+
+.light-mode .toggle-btn {
+  background: linear-gradient(45deg, #ddd, #bbb);
+  color: black;
+}
+
+.light-mode .toggle-btn:hover {
+  background: linear-gradient(45deg, #ccc, #aaa);
+}
